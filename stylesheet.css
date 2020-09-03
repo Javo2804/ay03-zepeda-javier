@@ -1,0 +1,96 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 5em 0;
+}
+
+header {
+  padding: 10px 10px 0;
+}
+
+#cabecera {
+  background: lightcoral;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#titulo {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+header ul li:hover {
+  background-color: #4A306D;
+}
+
+header ul li a:hover {
+  color:white;
+}
+
+h1:not(#titulo){
+  margin-top: 0;
+}
+
+div.contenido {
+  padding: 50px 20px 50px;
+  margin-top: -4px;
+}
+
+#ramos {
+  background-color: #0E273C;
+  color: white;
+}
+
+#ramos a{
+  color: lightblue;
+}
+
+#background {
+  background-color: #D0FCB3;
+}
+
+#background img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+footer {
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+#info-personal {
+  display: flex;
+}
+
+#perfil {
+  max-width: 300px;
+}
