@@ -3,11 +3,11 @@
 	<head>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
-		<title>Ayudantía 3 – PV</title>
+		<title>Mi sitio web – PV</title>
 	</head>
 	<body>
         <header id="cabecera">
-            <h1>Links de Navegación</h1>
+            <h1 id="titulo">Links de Navegación</h1>
             <nav>
                 <ul>
                     <li><a href="#" title="Inicio">Inicio</a></li>
@@ -19,21 +19,19 @@
                 </ul>
             </nav>
         </header>
-        <hr>
-        <div id="foto">
-            <img src="foto.jpg" alt="Foto Javier Zepeda Avello" width=300/>
-            <p><em><a href="#top">Volver arriba</a></em></p>
+        <div id="info-personal">
+            <div class="imagen">
+                <img id="perfil" src="foto.jpg" alt="Foto Javier Zepeda Avello"/>
+            </div>
+            <div id="quien-soy" class="contenido">
+                <h1>¿Quién soy?</h1>
+                <h2>Javier Zepeda Avello</h2>
+                <p>Hola, soy estudiante de Ingeniería en la Pontificia Universidad Católica de Chile.
+                    Esta es una página para la <a href="https://cursos.canvas.uc.cl/courses/18664">Ayudantía 3</a> de Pensamiento Visual.</p>
+                <em><a href="#top">Volver arriba</a></em>
+            </div>
         </div>
-        <div id="quien-soy">
-            <h1>¿Quién soy?</h1>
-            <h2>Javier Zepeda Avello</h2>
-            <p>Hola, soy estudiante de Ingeniería en la Pontificia Universidad Católica de Chile.
-                Esta es una página para la <a href="https://cursos.canvas.uc.cl/courses/18664">Ayudantía 3</a> de Pensamiento Visual.</p>
-            
-            <em><a href="#top">Volver arriba</a></em>
-        </div>
-        <hr>
-        <div id="ramos">
+        <div id="ramos" class="contenido">
             <h1>Mis Ramos</h1>
             <ul>
                 <li>Pensamiento Visual</li>
@@ -44,8 +42,7 @@
             </ul>
             <em><a href="#top">Volver arriba</a></em>
         </div>
-        <hr>
-        <div id="background">
+        <div id="background" class="contenido">
             <h1>Mi fondo de pantalla</h1>
             <img src="background.jpg">
             <em><a href="#top">Volver arriba</a></em>
