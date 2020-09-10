@@ -94,3 +94,35 @@ hr {
 #perfil {
   max-width: 300px;
 }
+
+#like_div {
+  display: flex;
+  align-items: center;
+}
+
+#like_button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/*
+#like_svg_bg {
+  fill: #ED4956 !important;
+}
+
+#like_svg_line {
+  fill: none !important;
+}
+*/
+
+#like_div #like_text {
+  margin-left: 10px;
+}
+
+#magic_button {
+  background-color: #4A306D;
+}
+#magic_button a {
+  color:white;
+}
