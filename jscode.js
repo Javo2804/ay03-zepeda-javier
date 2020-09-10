@@ -57,5 +57,12 @@ $(document).ready(function(){
         $("#titulo").text(saludos[Math.floor(Math.random() * saludos.length)])
     });
 
+    $("#background").mouseenter(function(){
+        $("#background").css("background-color","white");
+    });
+    $("#background").mouseleave(function(){
+        $("#background").css("background-color","#D0FCB3");
+        $("#bg_title").css("color","black");
+    })
 });
 
