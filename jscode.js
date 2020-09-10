@@ -42,7 +42,7 @@ $(document).ready(function(){
         console.log("Liked!")
         $("#like_svg_line").css("fill","none")
         $("#like_svg_bg").css("fill","red")
-        $.getJSON("https://api.countapi.xyz/get/avello.cl/web0_pv_likes");
+        $.getJSON("https://api.countapi.xyz/hit/avello.cl/web0_pv_likes");
         likes++
         if (likes == 1){
             $("#like_text").text(`${likes} me gusta`)
