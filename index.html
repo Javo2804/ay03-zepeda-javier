@@ -3,11 +3,13 @@
 	<head>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="jscode.js"></script>
 		<title>Mi sitio web – PV</title>
 	</head>
 	<body>
         <header id="cabecera">
-            <h1 id="titulo">Links de Navegación</h1>
+            <h1 id="titulo">Mi Sitio Web</h1>
             <nav>
                 <ul>
                     <li><a href="#" title="Inicio">Inicio</a></li>
@@ -16,6 +18,7 @@
                     <li><a href="#background" title="Mi Fondo de Pantalla">Mi Fondo de Pantalla</a></li>
                     <li><a href="https://www.instagram.com/javierzavello/" title="Mi Instagram" target="_blank">Mi Instagram</a></li>
                     <li><a href="https://www.google.com/" title="Google" target="_blank">Google</a></li>
+                    <li id="magic_button"><a href="#" title="Magia">¡Hazme Click!</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,7 +31,17 @@
                 <h2>Javier Zepeda Avello</h2>
                 <p>Hola, soy estudiante de Ingeniería en la Pontificia Universidad Católica de Chile.
                     Esta es una página para la <a href="https://cursos.canvas.uc.cl/courses/18664">Ayudantía 3</a> de Pensamiento Visual.</p>
-                <em><a href="#top">Volver arriba</a></em>
+                <div id="like_div">
+                    <button id="like_button">
+                        <svg width="40px" viewBox="0 0 513 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g transform="matrix(1,0,0,1,0,28)">
+                                <path id="like_svg_bg" d="M256,455.516C248.711,455.516 241.684,452.875 236.207,448.078C215.523,429.992 195.582,412.996 177.988,398.004L177.898,397.926C126.316,353.969 81.773,316.008 50.781,278.613C16.137,236.809 0,197.172 0,153.871C0,111.801 14.426,72.988 40.617,44.578C67.121,15.832 103.488,0 143.031,0C172.586,0 199.652,9.344 223.477,27.77C235.5,37.07 246.398,48.453 256,61.73C265.605,48.453 276.5,37.07 288.527,27.77C312.352,9.344 339.418,0 368.973,0C408.512,0 444.883,15.832 471.387,44.578C497.578,72.988 512,111.801 512,153.871C512,197.172 495.867,236.809 461.223,278.609C430.23,316.008 385.691,353.965 334.117,397.918C316.492,412.934 296.52,429.957 275.789,448.086C270.316,452.875 263.285,455.516 256,455.516Z" style="fill:white;"/>
+                                <path id="like_svg_line" d="M256,455.516C248.711,455.516 241.684,452.875 236.207,448.078C215.523,429.992 195.582,412.996 177.988,398.004L177.898,397.926C126.316,353.969 81.773,316.008 50.781,278.613C16.137,236.809 0,197.172 0,153.871C0,111.801 14.426,72.988 40.617,44.578C67.121,15.832 103.488,0 143.031,0C172.586,0 199.652,9.344 223.477,27.77C235.5,37.07 246.398,48.453 256,61.73C265.605,48.453 276.5,37.07 288.527,27.77C312.352,9.344 339.418,0 368.973,0C408.512,0 444.883,15.832 471.387,44.578C497.578,72.988 512,111.801 512,153.871C512,197.172 495.867,236.809 461.223,278.609C430.23,316.008 385.691,353.965 334.117,397.918C316.492,412.934 296.52,429.957 275.789,448.086C270.316,452.875 263.285,455.516 256,455.516ZM256,427.516C255.505,427.516 255.027,427.34 254.655,427.015C233.858,408.829 213.824,391.754 196.148,376.692C196.326,376.845 196.236,376.767 196.236,376.767C196.177,376.716 196.118,376.665 196.059,376.615C145.907,333.876 102.472,297.104 72.339,260.746C42.577,224.832 28,191.072 28,153.871C28,119.152 39.589,87.003 61.204,63.557C82.373,40.596 111.445,28 143.031,28C166.3,28 187.59,35.412 206.347,49.919C216.326,57.638 225.341,67.117 233.312,78.138C238.576,85.418 247.014,89.729 255.998,89.73C264.982,89.731 273.42,85.421 278.686,78.142C286.659,67.12 295.671,57.64 305.655,49.92C324.414,35.412 345.704,28 368.973,28C400.556,28 429.631,40.596 450.802,63.558C472.415,87.003 484,119.152 484,153.871C484,191.071 469.428,224.831 439.665,260.742C409.53,297.105 366.099,333.873 315.955,376.607C298.251,391.691 278.185,408.794 257.357,427.008C256.978,427.341 256.497,427.516 256,427.516Z"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <a id="like_text">Me gusta</a>
+                </div>    
             </div>
         </div>
         <div id="ramos" class="contenido">
@@ -43,8 +56,9 @@
             <em><a href="#top">Volver arriba</a></em>
         </div>
         <div id="background" class="contenido">
-            <h1>Mi fondo de pantalla</h1>
-            <img src="background.jpg">
+            <h1 id="bg_title">Mi fondo de pantalla</h1>
+            <button id="img_button"><a>Ver/ocultar imagen</a></button>
+            <img id="imagen_fondo" src="background.jpg">
             <em><a href="#top">Volver arriba</a></em>
         </div>
         <footer>
